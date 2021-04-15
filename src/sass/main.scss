@@ -3,5 +3,19 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+/* ===========UTILS============================ */
+@import "./utils/mixins";
+@import "./utils/variables";
+
+/* ===========BASE============================ */
+@import "./base/normalize";
+@import "./base/container";
+@import "./base/common";
+
+
+/* ===========COMPONENTS============================ */
+
+
+
+/* ===========LAYOUT============================ */
+
