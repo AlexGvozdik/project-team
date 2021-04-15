@@ -1,0 +1,17 @@
+.subtitle {
+  font-family: var(--primary-fonts);
+  @include font(30px, 500, 34px);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-subtitle-color);
+}
+
+.title {
+  font-family: var(--primary-fonts);
+  @include font(58px, 500, 66px, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+}
