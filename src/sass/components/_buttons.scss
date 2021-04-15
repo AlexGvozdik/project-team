@@ -1,0 +1,29 @@
+.button__sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  border-radius: 22px;
+  background-color: var(--secondary-background-color);
+  border: 1px solid transparent;
+
+  &--red {
+    background-color: var(--accent-link-color);
+  }
+
+  &__label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    color: var(--accent-link-color);
+    @include font(16px, 700, 21px);
+    font-family: inherit;
+
+    &--red {
+      color: var(--secondary-background-color);
+    }
+  }
+}
