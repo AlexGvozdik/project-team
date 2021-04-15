@@ -4,18 +4,16 @@
  */
 
 /* ===========UTILS============================ */
-@import "./utils/mixins";
-@import "./utils/variables";
+@import './utils/mixins';
+@import './utils/variables';
 
 /* ===========BASE============================ */
-@import "./base/normalize";
-@import "./base/container";
-@import "./base/common";
-
+@import './base/normalize';
+@import './base/container';
+@import './base/common';
 
 /* ===========COMPONENTS============================ */
-
-
+@import './components/subtitle';
+@import './components/title';
 
 /* ===========LAYOUT============================ */
-
