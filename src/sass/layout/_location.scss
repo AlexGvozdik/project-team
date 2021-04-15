@@ -1,0 +1,229 @@
+.location {
+        padding-bottom: 113px;
+        background: linear-gradient(180deg, var(--secondary-background-color) 0%, var(--secondary-background-color) 10%, var(--primary-background-color) 10%);
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__item {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 220px;
+            padding-top: 43px;
+            padding-bottom: 25px;
+            padding-left: 20px;
+            padding-right: 21px;
+            background: var(--secondary-background-color);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border-radius: 24px;
+        }
+
+        &__div:not(:last-child) {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--footer-line);
+        }
+}
+
+.location {
+    &__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 16px;
+        margin-bottom: 25px;
+
+        background-color: #F0D1A5;
+        border-radius: 4px;
+
+        &--greener {
+            width: 130px;
+            height: 16px;
+
+            background-color: #C2E297;
+        }
+    }
+
+    &__cafe {
+        @include font(12px, 500, 22px);
+        text-transform: uppercase;
+
+        color: var(--secondary-text-color);
+    }
+}
+
+.location {
+    &__city {
+        @include font(12px, 500, 22px);
+        margin-bottom: 10px;
+    }
+
+    &__info {
+        position: relative;
+        width: 188px;
+        @include font(12px, 500, 18px);
+        color: var(--footer-unicode-color);
+    }
+}
+
+.location {
+    &__day {
+        @include font(12px, 500, 22px);
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    &__time {
+        @include font(12px, 500, 22px);
+
+        color: var(--subtitle-color);
+    }
+}
+
+.location {
+    &__contact {
+        @include font(12px, 500, 18px);
+
+        color: var(--footer-unicode-color);
+    }
+
+    &__div-btn {
+        margin-top: 54px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .location {
+        padding-bottom: 165px;
+        background: linear-gradient(180deg, var(--secondary-background-color) 0%, var(--secondary-background-color) 10%, var(--primary-background-color) 10%);
+
+        &__item {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 31px;
+            padding-right: 32px;
+        }
+
+        &__div:not(:last-child) {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .location {
+        &__thumb {
+            width: 73px;
+            height: 28px;
+            margin-bottom: 30px;
+
+            &--greener {
+            width: 138px;
+            }
+        }
+
+        &__cafe {
+            @include font(16px, 500, 30px);
+        }
+    }
+
+    .location {
+        &__city {
+            @include font(14px, 500, 26px);
+            margin-bottom: 14px;
+        }
+
+        &__info {
+            width: 158px;
+            @include font(14px, 500, 23px);
+        }
+    }
+
+    .location {
+        &__day {
+            @include font(14px, 500, 26px);
+
+            &:not(:first-child) {
+            margin-top: 16px;
+            }
+        }
+
+        &__time {
+            @include font(14px, 500, 26px);
+        }
+    }
+
+    .location {
+        &__contact {
+            @include font(14px, 500, 26px);
+        }
+
+        &__div-btn {
+            margin-top: 81px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .location {
+        background: linear-gradient(180deg, var(--secondary-background-color) 0%, var(--secondary-background-color) 10%, var(--primary-background-color) 10%);
+
+        &__item {
+            max-width: 330px;
+            padding-top: 51px;
+            padding-bottom: 62px;
+            padding-left: 43px;
+            padding-right: 53px;
+        }
+
+        &__div:not(:last-child) {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    .location {
+        &__thumb {
+            margin-bottom: 32px;
+        }
+
+        &__city {
+            @include font(16px, 500, 30px);
+            margin-bottom: 10px;
+        }
+    }
+
+    .location {
+        &__info {
+            width: 244px;
+            @include font(16px, 500, 29px);
+        }
+
+        &__day {
+            @include font(16px, 500, 30px);
+    
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .location {
+        &__time {
+            @include font(16px, 500, 30px);
+        }
+
+        &__contact {
+            @include font(16px, 500, 29px);
+        }
+    }
+
+    .location {
+        &__div-btn {
+            margin-top: 86px;
+        }
+    }
+}
