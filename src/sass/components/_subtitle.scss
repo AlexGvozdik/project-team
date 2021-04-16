@@ -15,7 +15,6 @@
 
 @media screen and (min-width: 1200px) {
   .subtitle {
-   @include font(30px, 500, 34px);
+    @include font(30px, 500, 34px);
   }
-    
 }
