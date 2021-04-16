@@ -1,4 +1,4 @@
-.button__sections {
+.button-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,10 @@
 
   border-radius: 22px;
   background-color: var(--secondary-background-color);
-  border: 1px solid transparent;
+  border: none;
+
+  height: 44px;
+  min-width: 160px;
 
   &--red {
     background-color: var(--icon-unique-color);
@@ -24,6 +27,13 @@
 
     &--red {
       color: var(--secondary-background-color);
+      margin-right: 8px;
     }
+  }
+
+  &__icon {
+    width: 5px;
+    height: 8px;
+    margin-right: 13px;
   }
 }
