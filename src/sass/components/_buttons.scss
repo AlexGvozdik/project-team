@@ -15,7 +15,9 @@
   &--red {
     background-color: var(--icon-unique-color);
   }
+}
 
+.button-arrow {
   &__label {
     display: flex;
     text-align: center;
@@ -24,16 +26,29 @@
     color: var(--accent-link-color);
     @include font(16px, 700, 21px);
     font-family: inherit;
+    margin-right: 15px;
 
     &--red {
       color: var(--secondary-background-color);
-      margin-right: 8px;
+      margin-right: 10px;
     }
+  }
+}
+
+.button-arrow {
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__icon {
     width: 5px;
     height: 8px;
-    margin-right: 13px;
+    fill: var(--icon-basic-colo);
+
+    &--red {
+      fill: var(--secondary-text-color);
+    }
   }
 }
