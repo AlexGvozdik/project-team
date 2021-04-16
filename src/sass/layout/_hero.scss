@@ -1,0 +1,177 @@
+.hero {
+  &__container {
+    background-color: #ffb8ca;
+    display: flex;
+    position: relative;
+    height: 502px;
+  }
+
+  &__div-one {
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 999;
+  }
+
+  &__title {
+    width: 218px;
+    margin-bottom: 19px;
+    font-family: var(--secondary-fonts);
+    @include font(26px, 400, 30px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__title--span {
+    color: #d41443;
+    @include font(48px, 400, 46px);
+  }
+
+  &__ellips {
+    position: absolute;
+    right: 0;
+    top: 83px;
+  }
+
+  &__ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+  }
+
+  &__ellips-tablet {
+    display: none;
+  }
+
+  &__milk {
+    display: none;
+  }
+
+  &__girl {
+    display: none;
+  }
+
+  &__group-one {
+    display: none;
+  }
+
+  &__group-two {
+    display: none;
+  }
+}
+
+.button-hero {
+  width: 62px;
+  height: 24px;
+  background-color: #d41443;
+  border: none;
+  border-radius: 20px;
+
+  font-family: DM Sans;
+  @include font(8px, 400, 10px);
+  text-align: center;
+  color: #ffffff;
+
+  &__color {
+    width: 83px;
+    height: 24px;
+
+    margin-left: 8px;
+
+    background-color: #ffffff;
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    &__container {
+      height: 399px;
+    }
+
+    &__ellips {
+      display: none;
+    }
+
+    &__ice-cream {
+      right: 247px;
+    }
+
+    &__ellips-tablet {
+      position: absolute;
+      display: block;
+      top: 31px;
+      right: 137px;
+
+      width: 324px;
+    }
+
+    &__milk {
+      position: absolute;
+      display: block;
+      bottom: 28px;
+      left: 34px;
+    }
+
+    &__girl {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      right: 34px;
+    }
+
+    &__group-one {
+      position: absolute;
+      display: block;
+      top: 94px;
+      right: 34px;
+    }
+
+    &__group-two {
+      position: absolute;
+      display: block;
+      top: 151px;
+      right: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    &__container {
+      height: 665px;
+    }
+
+    &__div-one {
+      margin-left: 115px;
+    }
+
+    &__ice-cream {
+      right: 450px;
+    }
+
+    &__ellips-tablet {
+      top: 52px;
+      right: 267px;
+    }
+
+    &__milk {
+      bottom: 45px;
+      left: 77px;
+    }
+
+    &__girl {
+      bottom: 0;
+      right: 109px;
+    }
+
+    &__group-one {
+      top: 156px;
+      right: 97px;
+    }
+
+    &__group-two {
+      top: 248px;
+      right: 97px;
+    }
+  }
+}
