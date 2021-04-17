@@ -7,10 +7,9 @@
 
   border-radius: 22px;
   background-color: var(--secondary-background-color);
-  background-color: blue;
   border: none;
 
-  height: 44px;
+  max-height: 44px;
   max-width: 160px;
 
   &--red {
