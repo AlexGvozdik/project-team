@@ -44,7 +44,6 @@
   font-size: $fs;
   font-weight: $fw;
   line-height: decimal-round($lh/$fs, 3);
-<<<<<<< Updated upstream
 }
 
 @mixin colorize($colors, $baseSelector) {
@@ -55,7 +54,4 @@
       background-color: #{$color};
     }
   }
-=======
-  letter-spacing: $ls;
->>>>>>> Stashed changes
 }

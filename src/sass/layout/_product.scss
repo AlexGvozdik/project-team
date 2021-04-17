@@ -14,7 +14,7 @@
 .product__item {
   border-radius: 24px;
   text-align: center;
-  width: 280px;
+  max-width: 100%;
   height: 485px;
 
   margin-right: 15px;
@@ -70,7 +70,9 @@ $colors: "var(--hero-background-color)", "#F0D1A5", "#C2E297";
 
 .product__points {
   display: block;
-  margin: 0 auto 18px;
+  // margin: 0 auto 18px;
+  margin-left: 135px;
+
   width: 4px;
   height: 4px;
   border-radius: 50%;
