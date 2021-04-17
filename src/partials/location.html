@@ -1,6 +1,6 @@
 <section class="location">
   <div class="location__container container">
-    <h2 class="location__title">Location of our cafes and foodtrucks</h2>
+    <h2 class="location__title visually-hidden">Location of our cafes and foodtrucks</h2>
     <ul class="location__grid grid list">
       <li class="location__item item">
         <div class="location__div">
@@ -64,8 +64,20 @@
     </ul>
 
     <div class="location__div-btn">
-      <button type="button"><span>Our Locations</span></button>
-      <button type="button"><span>Franchise</span></button>
+      <button type="location__button button-arrow button-arrow--red">
+        <div class="button-arrow__div">
+        <span class="button-arrow__label">Our Locations</span>
+        <svg class="button-arrow__icon" width="12" height="10">
+          <use href="../src/images/svg-icon/sprite.svg#icon-arrow"></use>
+        </svg>
+      </div>
+    </button>
+
+
+    
+      <button type="location__button button-arrow">
+        <span class="button-arrow__label--red">Franchise</span>
+      </button>
     </div>
   </div>
 </section>
