@@ -1,5 +1,5 @@
 .subtitle {
-  font-family: var(--primary-fonts);
+  font-family: var(--secondary-fonts);
   @include font(18px, 500, 21px);
   text-align: center;
   text-transform: uppercase;
@@ -10,11 +10,11 @@
   .subtitle {
     @include font(26px, 500, 30px);
   }
-    
 }
 
 @media screen and (min-width: 1200px) {
   .subtitle {
     @include font(30px, 500, 34px);
   }
+
 }

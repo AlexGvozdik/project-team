@@ -6,7 +6,6 @@
 /* ===========UTILS============================ */
 @import './utils/mixins';
 @import './utils/variables';
-@import "./utils/visually-hidden";
 
 /* ===========BASE============================ */
 @import './base/normalize';
@@ -14,14 +13,8 @@
 @import './base/common';
 
 /* ===========COMPONENTS============================ */
-@import "./components/grid";
-@import "./components/item";
-@import './components/button-arrow';
-@import './components/subtitle';
-@import './components/title';
+@import "./components/title";
+@import "./components/subtitle";
 
 /* ===========LAYOUT============================ */
-@import './layout/hero';
-@import "./layout/location";
-@import './layout/footer';
-
+@import "./layout/product";
