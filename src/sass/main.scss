@@ -13,13 +13,15 @@
 @import './base/common';
 
 /* ===========COMPONENTS============================ */
-
-
-/* ===========LAYOUT============================ */
-@import './layout/footer';
+@import "./components/grid";
+@import "./components/item";
 @import './components/buttons';
 @import './components/subtitle';
 @import './components/title';
 
-
 /* ===========LAYOUT============================ */
+@import "./layout/location";
+@import './layout/footer';
+
+
+
