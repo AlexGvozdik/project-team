@@ -1,3 +1,6 @@
+.item {
+    margin-top: 20px;
+}
 @media screen and (max-width:767px) {
     .item {
         margin-left: auto;
@@ -7,7 +10,6 @@
 @media screen and (min-width:768px) {
     .item {
         flex-basis: calc((100% - 3 * 20px) / 3);
-        margin-top: 20px;
         margin-left: 20px;
     }
 }
