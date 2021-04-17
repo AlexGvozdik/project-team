@@ -1,0 +1,54 @@
+.button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  border-radius: 22px;
+  background-color: var(--secondary-background-color);
+  border: none;
+
+  height: 44px;
+  min-width: 160px;
+
+  &--red {
+    background-color: var(--icon-unique-color);
+  }
+}
+
+.button-arrow {
+  &__label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    color: var(--accent-link-color);
+    @include font(16px, 700, 21px);
+    font-family: inherit;
+    margin-right: 15px;
+
+    &--red {
+      color: var(--secondary-background-color);
+      margin-right: 10px;
+    }
+  }
+}
+
+.button-arrow {
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 5px;
+    height: 8px;
+    fill: var(--icon-basic-colo);
+
+    &--red {
+      fill: var(--secondary-text-color);
+    }
+  }
+}
