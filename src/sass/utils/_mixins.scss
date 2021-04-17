@@ -40,8 +40,18 @@
   }
 }
 
-@mixin font ($fs:34px, $fw:400, $lh:39px) {
+@mixin font ($fs:34px, $fw:400, $lh:39px, $ls: 0.04em) {
   font-size: $fs;
   font-weight: $fw;
   line-height: decimal-round($lh/$fs, 3);
+}
+
+@mixin colorize($colors, $baseSelector) {
+  @each $color in $colors {
+    $idx: index($colors, $color);
+
+    #{$baseSelector}:nth-child(#{$idx}) {
+      background-color: #{$color};
+    }
+  }
 }

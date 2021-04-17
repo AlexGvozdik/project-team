@@ -1,21 +1,21 @@
-.title {
-  @include font(34px, 500, 39px);
+.subtitle {
   font-family: var(--secondary-fonts);
+  @include font(18px, 500, 21px);
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-title-color);
+  color: var(--subtitle-color);
 }
 
 @media screen and (min-width: 768px) {
-  .title {
-    @include font(48px, 500, 55px);
+  .subtitle {
+    @include font(26px, 500, 30px);
   }
 
 }
 
 @media screen and (min-width: 1200px) {
-  .title {
-    @include font(58px, 500, 66px, 0.06em);
+  .subtitle {
+    @include font(30px, 500, 34px);
   }
 
 }
