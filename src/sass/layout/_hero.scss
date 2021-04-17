@@ -271,6 +271,8 @@
     width: 102px;
     height: 40px;
 
+    @include font(14px, 400, 18px);
+
     &__color {
       width: 138px;
       height: 40px;
