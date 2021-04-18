@@ -1,15 +1,17 @@
 .product {
   padding-top: 121px;
   padding-bottom: 98px;
+
+  &__main-subtitle {
+    margin-bottom: 15px;
+  }
+  
+  &__main-title {
+    margin-bottom: 145px;
+  }
+
 }
 
-.subtitle {
-  margin-bottom: 15px;
-}
-
-.title {
-  margin-bottom: 145px;
-}
 
 .product__item {
   border-radius: 24px;
@@ -117,7 +119,7 @@ $colors: 'var(--hero-background-color)', '#F0D1A5', '#C2E297';
 }
 
 @media screen and (min-width: 768px) {
-  .title {
+  .product__main-title {
    margin-bottom: 149px;
  }
  .product__item {
@@ -148,7 +150,7 @@ $colors: 'var(--hero-background-color)', '#F0D1A5', '#C2E297';
 }
 
 @media screen and (min-width: 1200px) {
- .title {
+ .product__main-title {
    margin-bottom: 258px;
  }
 
