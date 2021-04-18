@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--primary-background-color);
+  background-color: rgb(169, 236, 169);
 }
 .footer-up {
   @media screen and (min-width: 768px) {
@@ -13,7 +13,6 @@ footer {
     @media screen and (min-width: 768px) {
       max-width: 340px;
       margin-bottom: 91px;
-      margin-right: 92px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 477px;
@@ -34,11 +33,10 @@ footer {
     text-transform: uppercase;
     color: var(--subtitle-color);
     max-width: 232px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     text-align: start;
     @media screen and (min-width: 768px) {
       text-align: start;
-      margin-bottom: 40px;
       max-width: 340px;
       @include font(26px, 400, 30px);
       letter-spacing: 0.04em;

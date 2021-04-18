@@ -9,8 +9,8 @@
   background-color: var(--secondary-background-color);
   border: none;
 
-  max-height: 44px;
-  max-width: 160px;
+  height: 44px;
+  min-width: 160px;
 
   &--red {
     background-color: var(--icon-unique-color);
@@ -19,10 +19,6 @@
 
 .button-arrow {
   &__label {
-    display: flex;
-    text-align: center;
-    align-items: center;
-
     color: var(--accent-link-color);
     @include font(16px, 700, 21px);
     font-family: inherit;
@@ -30,7 +26,6 @@
 
     &--red {
       color: var(--secondary-background-color);
-      margin-right: 10px;
     }
   }
 }
@@ -51,4 +46,9 @@
       fill: var(--secondary-text-color);
     }
   }
+}
+
+@media screen and (min-width:768px) {
+
+  
 }
