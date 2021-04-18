@@ -161,7 +161,9 @@
     }
 
     &__arrow {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       bottom: 34px;
       left: 154px;
@@ -174,8 +176,9 @@
       &--svg {
         display: block;
         margin: 0 auto;
-        width: 6px;
-        height: 6px;
+        width: 10px;
+        height: 10px;
+        fill: var(--icon-basic-color);
       }
     }
 
@@ -255,6 +258,8 @@
     &__arrow {
       bottom: 58px;
       left: 249px;
+      width: 26px;
+      height: 26px;
     }
   }
 
