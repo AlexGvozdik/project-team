@@ -165,6 +165,18 @@
       position: absolute;
       bottom: 34px;
       left: 154px;
+
+      border: none;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+
+      &--svg {
+        display: block;
+        margin: 0 auto;
+        width: 6px;
+        height: 6px;
+      }
     }
 
     &__text {
@@ -251,6 +263,8 @@
 
     width: 102px;
     height: 40px;
+
+    @include font(14px, 400, 18px);
 
     &__color {
       width: 138px;

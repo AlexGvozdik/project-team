@@ -6,17 +6,14 @@
 /* ===========UTILS============================ */
 @import './utils/mixins';
 @import './utils/variables';
-<<<<<<< Updated upstream
 @import './utils/visually-hidden';
 
-=======
-@import "./utils/visually-hidden";
->>>>>>> Stashed changes
 
 /* ===========BASE============================ */
 @import './base/normalize';
 @import './base/container';
 @import './base/common';
+
 
 /* ===========COMPONENTS============================ */
 @import "./components/title";
@@ -24,23 +21,10 @@
 @import "./components/button-arrow";
 @import "./components/grid";
 @import "./components/item";
-<<<<<<< Updated upstream
 
-=======
-@import "./components/button-arrow";
-@import './components/subtitle';
-@import './components/title';
->>>>>>> Stashed changes
 
 /* ===========LAYOUT============================ */
 @import "./layout/hero";
 @import "./layout/product";
 @import "./layout/location";
-<<<<<<< Updated upstream
 @import "./layout/footer";
-=======
-@import "./layout/footer";
-
-
-
->>>>>>> Stashed changes
