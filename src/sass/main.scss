@@ -8,21 +8,24 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
+
 /* ===========BASE============================ */
 @import './base/normalize';
 @import './base/container';
 @import './base/common';
 
+
 /* ===========COMPONENTS============================ */
-@import './components/title';
-@import './components/subtitle';
-@import './components/button-arrow';
-@import './components/grid';
-@import './components/item';
+@import "./components/title";
+@import "./components/subtitle";
+@import "./components/button-arrow";
+@import "./components/grid";
+@import "./components/item";
+
 
 /* ===========LAYOUT============================ */
-@import './layout/hero';
-@import './layout/product';
-@import './layout/made';
-@import './layout/location';
-@import './layout/footer';
+@import "./layout/hero";
+@import "./layout/product";
+@import "./layout/location";
+@import "./layout/footer";
+
