@@ -7,11 +7,10 @@
 
   border-radius: 22px;
   background-color: var(--secondary-background-color);
-  background-color: blue;
   border: none;
 
   height: 44px;
-  max-width: 160px;
+  min-width: 160px;
 
   &--red {
     background-color: var(--icon-unique-color);
@@ -20,10 +19,6 @@
 
 .button-arrow {
   &__label {
-    display: flex;
-    text-align: center;
-    align-items: center;
-
     color: var(--accent-link-color);
     @include font(16px, 700, 21px);
     font-family: inherit;
@@ -31,7 +26,6 @@
 
     &--red {
       color: var(--secondary-background-color);
-      margin-right: 10px;
     }
   }
 }
@@ -50,6 +44,40 @@
 
     &--red {
       fill: var(--secondary-text-color);
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  .button-arrow {
+      min-width: 175px;
+    &--red {
+      min-width: 192px;
+    }
+  }
+  
+}
+
+@media screen and (min-width:1200px) {
+  .button-arrow {
+    min-width: 180px;
+
+    &--red {
+      min-width: 198px;
+    }
+  }
+
+  .button-arrow {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-greyer-color);
+    }
+  }
+
+  .button-arrow--red {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-redder-color);
     }
   }
 }

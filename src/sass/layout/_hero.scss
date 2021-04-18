@@ -1,6 +1,7 @@
 .hero {
+  background-color: #ffb8ca;
+
   &__container {
-    background-color: #ffb8ca;
     display: flex;
     position: relative;
     height: 502px;
@@ -77,7 +78,6 @@
   border: none;
   border-radius: 20px;
 
-  font-family: DM Sans;
   @include font(8px, 400, 10px);
   text-align: center;
   color: #ffffff;
@@ -185,9 +185,8 @@
       left: 154px;
       width: 130px;
 
-      font-family: DM Sans;
-      font-size: 8px;
-      line-height: 150%;
+      @include font(8px, 400, 12px);
+
       color: #ffffff;
     }
   }
@@ -200,7 +199,7 @@
     }
 
     &__div-one {
-      margin-left: 115px;
+      margin-left: 69px;
     }
 
     &__title {
@@ -214,60 +213,54 @@
     }
 
     &__ice-cream {
-      right: 450px;
+      right: 392px;
     }
 
     &__ellips-tablet {
       top: 52px;
-      right: 267px;
+      right: 209px;
     }
 
     &__milk {
       bottom: 45px;
-      left: 77px;
+      left: 31px;
     }
 
     &__girl {
       bottom: 0;
-      right: 109px;
+      right: 33px;
     }
 
     &__group-one {
       top: 156px;
-      right: 97px;
+      right: 18px;
     }
 
     &__group-two {
       top: 248px;
-      right: 97px;
+      right: 18px;
     }
 
     &__text {
       width: 200px;
       bottom: 102px;
-      left: 295px;
+      left: 249px;
 
-      font-size: 14px;
-      line-height: 140%;
+      @include font(14px, 400, 20px);
+
 
       z-index: 99;
     }
 
     &__arrow {
-      bottom: 56px;
-      left: 295px;
-
-      width: 26px;
-      height: 26px;
-
-      &--svg {
-        width: 9px;
-        height: 9px;
-      }
+      bottom: 58px;
+      left: 249px;
     }
   }
 
   .button-hero {
+    @include font(14px, 400, 18px);
+
     width: 102px;
     height: 40px;
 
@@ -278,4 +271,20 @@
       height: 40px;
     }
   }
+  
+  .button-hero {
+  
+    &:hover,
+    &:focus {
+      background-color: var(--accent-redder-color);
+    }
+  }
+
+  .button-hero__color {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-greyer-color);
+    }
+  }
+
 }
