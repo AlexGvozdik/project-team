@@ -14,20 +14,14 @@
 .product__item {
   border-radius: 24px;
   text-align: center;
-  max-width: 100%;
+  max-width: 280px;
   height: 485px;
-
-  margin-right: 15px;
-  margin-left: 15px;
-
-  &:not(:last-child) {
-    margin-bottom: 130px;
-  }
-
 }
+
 
 .product__thumb {
   position: relative;
+  
 }
 
 .product__title {
@@ -63,7 +57,7 @@ $colors: "var(--hero-background-color)", "#F0D1A5", "#C2E297";
 .product__card {
   position: absolute;
   top: -26%;
-  left: -10%;
+  left: -12%;
   transform: translateX(20%);
 }
 
@@ -71,7 +65,7 @@ $colors: "var(--hero-background-color)", "#F0D1A5", "#C2E297";
 .product__points {
   display: block;
   // margin: 0 auto 18px;
-  margin-left: 135px;
+  margin-left: 128px;
 
   width: 4px;
   height: 4px;
@@ -107,7 +101,7 @@ $colors: "var(--hero-background-color)", "#F0D1A5", "#C2E297";
 
 }
 
-.button-arrow {
+.button-long-arrow {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -120,3 +114,74 @@ $colors: "var(--hero-background-color)", "#F0D1A5", "#C2E297";
   position: relative;
   top: 2px;
 }
+
+@media screen and (max-width: 767px) {
+ .product__item:not(:last-child) {
+   margin-bottom: 130px;
+ }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+   margin-bottom: 149px;
+ }
+ .product__item {
+   max-width: 220px;
+ }
+ .product__description {
+   width: 198px;
+   height: 110px;
+   overflow: hidden;
+   margin-bottom: 40px;
+  }
+
+ .product__title {
+   padding-left: 11px;
+   padding-right: 11px;
+   padding-top: 152px;
+
+   margin-bottom: 30px;
+  }
+
+ .product__points {
+   margin-left: 98px;
+   margin-bottom: 30px;
+  } 
+ .product__card {
+   left: -45px;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .title {
+   margin-bottom: 258px;
+ }
+
+  .product__item {
+    max-width: 329px;
+    height: 525px;
+  }
+ .product__description {
+   @include font(16px, 700, 28px);
+   width: 241px;
+   height: 106px;
+   margin-bottom: 62px;
+ } 
+
+ .product__title {
+  padding-top: 162px;
+  margin-bottom: 32px;
+ }
+
+ .product__points {
+   margin-left: 151px;
+   margin-bottom: 32px;
+ }
+
+  .product__card {
+   top:-200px;
+   left: -65px;
+  }
+}
+
+
