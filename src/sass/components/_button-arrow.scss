@@ -7,10 +7,12 @@
 
   border-radius: 22px;
   background-color: var(--secondary-background-color);
+
   border: none;
 
   height: 44px;
   min-width: 160px;
+
 
   &--red {
     background-color: var(--icon-unique-color);
@@ -39,7 +41,7 @@
 
   &__icon {
     width: 10px;
-    height:11px;
+    height: 11px;
     fill: var(--icon-basic-color);
 
     &--red {
