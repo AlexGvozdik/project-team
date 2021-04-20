@@ -16,8 +16,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (min-width: 320px),
-  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .made {
     background-image: url(../images/made/milk-mob@2x.png);
   }
@@ -27,14 +27,14 @@
   .made {
     background-image: url(../images/made/browser-milk.png);
     background-repeat: no-repeat;
-    background-position: left 0 top 342px;
+    background-position: left 0 top 415px;
     background-size: contain;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .made {
     background-image: url(../images/made/browser-milk@2x.png);
   }
@@ -116,6 +116,19 @@
     min-width: 516px;
     margin-bottom: 0;
   }
+}
+
+.made__picture {
+  animation-name: animate__rotateIn;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  transform: rotate(0deg);
+
+  transition: transform 2000ms;
+}
+
+.made__picture:hover {
+  transform: rotate(360deg);
 }
 
 .made__right-side {
