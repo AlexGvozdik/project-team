@@ -95,7 +95,7 @@
       </div>
       <span class="wave-btn__waves"></span>
       </button>
-      <button class="wave-btn location__button  button-arrow" type="button">
+      <button data-modal-open class="wave-btn location__button  button-arrow" type="button">
         <div class="button-arrow__div">
         <span class="button-arrow__label location__label">Franchise
         </span>
@@ -105,6 +105,79 @@
       </div>
       <span class="wave-btn__waves wave-btn__waves--greyer"></span>
       </button>
+
+      <div class="sign is-hidden backdrop" data-modal>
+                        <div class="sign-modal containerok">
+                            <form class="sign-modal__form" id="Form1">
+                                <button class="sign__close-btn" type="button" data-modal-close>
+                            <svg class="sign__cross">
+                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+                            </svg>
+                            </button>
+                                <h3 class="sign-modal__title">CREATE ACCOUNT</h3>
+                                <input class="sign-modal__input" type="text" placeholder="Email" required>
+                                <input class="sign-modal__input" type="password" placeholder="Password" required>
+                                <input class="sign-modal__input" type="password" placeholder="Confirm Password"
+                                    required>
+                                <div class="sign-modal__btn-box">
+                                    <button type="button" class="sign-modal__btn" id="Next1">
+                                        Next
+                                    </button>
+                                </div>
+                            </form>
+
+                            <form class="sign-modal__form" id="Form2">
+                              <!-- <button class="sign__close-btn" type="button" data-modal-close-two>
+                            <svg class="sign__cross">
+                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+                            </svg>
+                            </button> -->
+                                <h3 class="sign-modal__title">SOCIAL LINKS</h3>
+                                <input class="sign-modal__input" type="text" placeholder="Medium">
+                                <input class="sign-modal__input" type="text" placeholder="GitHub">
+                                <input class="sign-modal__input" type="text" placeholder="LinkedIn">
+
+
+                                <div class="sign-modal__btn-box">
+                                    <button type="button" class="sign-modal__btn" id="Back1">
+                                        Back
+                                    </button>
+                                    <button type="button" class="sign-modal__btn" id="Next2">
+                                        Next
+                                    </button>
+                                </div>
+                            </form>
+
+                            <form class="sign-modal__form" id="Form3">
+                              <!-- <button class="sign__close-btn" type="button" data-modal-close-three>
+                            <svg class="sign__cross">
+                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+                            </svg>
+                            </button> -->
+                                <h3 class="sign-modal__title">PERSONAL INFO</h3>
+                                <input class="sign-modal__input" type="text" placeholder="First Name" required>
+                                <input class="sign-modal__input" type="text" placeholder="Last Name" required>
+                                <input class="sign-modal__input" type="text" placeholder="Mobile No." required>
+
+                                <div class="sign-modal__btn-box">
+                                    <button type="button" class="sign-modal__btn" id="Back2">
+                                        Back
+                                    </button>
+                                    <button type="submit" class="sign-modal__btn">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="sign-modal__step-row olx">
+                                <div id="progress"></div>
+                                <div class="sign-modal__step-col"><small>Step 1</small></div>
+                                <div class="sign-modal__step-col"><small>Step 2</small></div>
+                                <div class="sign-modal__step-col"><small>Step 3</small></div>
+
+                            </div>
+                        </div>
+                    </div>
     </div>
   </div>
 </section>
