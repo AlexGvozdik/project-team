@@ -84,17 +84,30 @@
       </li>
     </ul>
   <div class="location__div-btn">
-      <button class="wave-btn location__button  button-arrow button-arrow--red" type="button">
+      <button data-modal-open-map class="wave-btn location__button  button-arrow button-arrow--red" type="button">
         <div class="button-arrow__div">
-        <span class="button-arrow__label location__label button-arrow__label--red">Our Locations
+          <span class="button-arrow__label location__label button-arrow__label--red">Our Locations
 
-        </span>
-        <svg class="button-arrow__icon location__icon button-arrow__icon--red">
-          <use href="../src/images/svg-icon/sprite.svg#icon-arrow"></use>
-        </svg>
-      </div>
-      <span class="wave-btn__waves"></span>
+          </span>
+          <svg class="button-arrow__icon location__icon button-arrow__icon--red">
+            <use href="../src/images/svg-icon/sprite.svg#icon-arrow"></use>
+          </svg>
+        </div>
+        <span class="wave-btn__waves"></span>
       </button>
+      <div class="map is-hidden backdrop" data-modal-map>
+        <div class="map__modal" id="destination">
+          <button class="map__close-btn" type="button" data-modal-close-map>
+                            <svg class="map__cross">
+                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+                            </svg>
+                            </button>
+                            <span class="map__span">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47508.025717299046!2d-87.7098407208985!3d41.90894960000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2597278c85f%3A0x8e2ed38d4cb1e1e4!2sScooter&#39;s%20Frozen%20Custard!5e0!3m2!1sru!2sua!4v1619000316049!5m2!1sru!2sua" width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </span>
+        </div>
+      </div>
+
       <button data-modal-open class="wave-btn location__button  button-arrow" type="button">
         <div class="button-arrow__div">
         <span class="button-arrow__label location__label">Franchise
@@ -107,7 +120,7 @@
       </button>
 
       <div class="sign is-hidden backdrop" data-modal>
-                        <div class="sign-modal containerok">
+                        <div class="sign-modal">
                             <form class="sign-modal__form" id="Form1">
                                 <button class="sign__close-btn" type="button" data-modal-close>
                             <svg class="sign__cross">
